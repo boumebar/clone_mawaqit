@@ -1,0 +1,280 @@
+html {
+    display: block;
+}
+body{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.42857143;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-shadow: 0 10px 10px #000000b8;
+    overflow: hidden;
+    color: #fff;
+    font-family: koufi,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: rgb(36, 45, 98);
+    text-align: center;
+}
+#black-screen, .iqama, .main, .sub-main {
+    height: 100vh;
+    margin: auto;
+}
+.hidden{
+    display: none;
+}
+div{
+    display: block;
+}
+.header{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.42857143;
+    text-shadow: 0 10px 10px #000000b8;
+    color: #fff;
+    font-family: koufi,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+}
+.top-buttons {
+    cursor: pointer;
+    font-size: 220%;
+    left: 10px;
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+}
+.text-left {
+    text-align: left;
+}
+.top-content{
+    height: 54%;
+    overflow: hidden;
+    position: relative;
+}
+.header h1{    
+    font-size: 4vw;
+    font-weight: 700;
+    margin: auto;
+    overflow: hidden;
+    padding: 0.5vw;
+    white-space: nowrap;
+    width: 78%;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.online{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.42857143;
+    text-shadow: 0 10px 10px #000000b8;
+    font-family: koufi,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    color: #bdbbbb;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+/* meteo */
+#weather {
+    font-size: 3vw;
+    position: fixed;
+    right: 10px;
+    top: 30px;
+}
+
+.middle {
+    color: #ffd05f;
+}
+.ltr {
+    direction: ltr;
+}
+.text-center {
+    text-align: center;
+}
+.screen-status{
+    font-size: 0.9rem;
+}
+
+/* bloc central */
+.center-time{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.42857143;
+    text-shadow: 0 10px 10px #000000b8;
+    color: #fff;
+    font-family: koufi,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(73,0,148,.7);
+    border-radius: 2vw;
+    height: 14vw;
+    padding: 1.5vw;
+    position: relative;
+    background-color: rgba(154, 7, 7, 0.6) !important;
+}
+.next-prayer-bloc {
+    background: linear-gradient(0deg,rgba(0,0,0,.6) 60%,transparent);
+    border-radius: 0 0 2vw 2vw;
+    font-size: 2.8vw;
+    font-weight: 700;
+    height: 8vw;
+    line-height: 10vw;
+    margin: -2.5vw auto 0;
+}
+.next-prayer-bloc img {
+    margin: -1vw 0.5vw 0;
+    width: 3.5vw;
+}
+.next-prayer .countdown {
+    display: inline;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1vw;
+}
+.content .currentTime, .currentTimeShort {
+    direction: ltr;
+    display: inline-flex;
+    justify-content: center;
+}
+.content .currentTime {
+    align-items: center;
+    font-size: 8vw;
+    line-height: 7vw;
+    margin-bottom: -1vw;
+}
+.custom-time, .joumouaa {
+    border-radius: 2vw;
+    font-size: 3vw;
+    margin: 50px auto;
+    padding: 0 1vw;
+    width: fit-content;
+}
+.custom-time .name, .joumouaa .name {
+    font-weight: 400;
+}
+#gregorianDate, #hijriDate {
+    font-size: 2.8vw;
+    font-weight: 400;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 9vw;
+}
+.fadeOut {
+    opacity: 0
+}
+
+.fadeIn,.fadeOut {
+    transition: opacity 1s linear
+}
+
+.fadeIn {
+    opacity: 1
+}
+.time {
+    display: flex;
+    font-size: 4.5vw;
+    font-weight: 700;
+    padding: 0 10px;
+    
+    direction: ltr;
+    justify-content: center;
+}
+.prayers {
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+}
+
+/*# les cartes des 5 prieres */
+
+.prayers>div {
+    background-color: rgba(0,0,0,.6);
+    border-radius: 2vw;
+    padding: 0.5vw;
+    width: 15vw;
+}
+
+.prayers .name {
+    font-size: 3vw;
+    font-weight: 400;
+}
+.prayers .wait {
+    display: flex;
+    font-size: 3.5vw;
+    justify-content: center;
+}
+
+.prayer-highlighted, .center-time, .bottom-block {
+    background-color: rgba(154, 7, 7, 0.6) !important;
+}
+/*# footer*/
+footer {
+    bottom: 0;
+    display: flex;
+    height: 10vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+}
+footer .info {
+    margin: auto;
+    width: 70%;
+}
+.version {
+    background: #490094;
+    border-radius: 0 0 1vw 1vw;
+    bottom: 0.3vw;
+    color: #adadad;
+    font-size: .8vw;
+    padding: 0.2vw 0.5vw;
+    position: fixed;
+    right: 3vw;
+}
+.logo {
+    bottom: 1.5vw;
+    height: 3.5vw;
+    position: fixed;
+    right: 0.5vw;
+}
+.assosciation {
+    font-size: 1.3vw;
+}
+
+.store {
+    bottom: 5px;
+    left: 5px;
+    position: fixed;
+    width: 4.8vw;
+}
+#mosque-id {
+    color: #adadad;
+    font-size: .8vw;
+    margin-bottom: 0.5vw;
+    text-align: left;
+}
+#qrcode img {
+    width: 100%;
+}
